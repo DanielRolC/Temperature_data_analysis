@@ -1,0 +1,50 @@
+========================================================================
+  SCRIPT 2 — EDA of temp_bocal.mat
+========================================================================
+========================================================================
+  PHASE 1 — .mat File Internal Structure Inspection
+========================================================================
+  File: temp_bocal.mat
+
+  Key: __header__                      |  type: bytes            |  value: b'MATLAB 5.0 MAT-file, Platform: PCWIN64, Created on: Mon Feb  3 22:00:03 2020'
+  Key: __version__                     |  type: str              |  value: '1.0'
+  Key: __globals__                     |  type: list             |  value: []
+  Key: bocal                           |  type: ndarray          |  dtype: float64       |  shape: (2192, 1)
+  Key: None                            |  type: MatlabOpaque     |  dtype: [('s0', 'O'), ('s1', 'O'), ('s2', 'O'), ('arr', 'O')]  |  shape: (1,)
+  Key: __function_workspace__          |  type: ndarray          |  dtype: uint8         |  shape: (1, 18720)
+
+[INFO] 'bocal' array: 2192 elements, dtype=float64
+[INFO] Missing/NaN values: 28 out of 2192
+[INFO] Date range: 2012-01-01 → 2017-12-31
+
+── Yearly Summary Statistics ──
+      mean  median  std   min   max  count  range
+Year                                             
+2012 16.03   15.25 3.16 11.10 23.10    366  12.00
+2013 15.70   14.70 3.04 10.90 22.30    360  11.40
+2014 16.43   16.30 3.05 11.90 22.30    363  10.40
+2015 15.68   15.60 2.84 10.80 21.40    352  10.60
+2016 15.94   14.80 2.65 11.80 21.10    359   9.30
+2017 16.15   15.60 2.97 11.60 22.10    364  10.50
+
+[INFO] Detected 23 local maxima, 32 local minima
+  Mean heating rate near maxima: 0.222 °C/day
+  Mean cooling rate near maxima: -0.284 °C/day
+
+── Annual Temperature Peaks ──
+  2012-07-02  →  21.7 °C
+  2012-08-20  →  23.1 °C
+  2013-10-07  →  20.1 °C
+  2014-07-31  →  22.3 °C
+  2014-10-21  →  20.7 °C
+  2015-07-09  →  20.4 °C
+  2015-07-29  →  21.3 °C
+  2015-08-31  →  21.4 °C
+  2016-08-06  →  21.1 °C
+  2016-10-01  →  20.1 °C
+  2017-09-14  →  20.6 °C
+  2017-09-30  →  20.3 °C
+
+[INFO] Generating plots …
+
+[DONE] All figures and logs saved to 'outputs/' directory.

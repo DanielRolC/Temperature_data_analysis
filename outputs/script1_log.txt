@@ -1,0 +1,33 @@
+========================================================================
+  SCRIPT 1 — EDA of temp_bocal.txt
+========================================================================
+[INFO] Loaded 2192 records  |  Date range: 2012-01-01 → 2017-12-31
+[INFO] Missing temperature values: 28
+[INFO] IQR outlier fences: [5.30, 26.90] °C  → 0 outliers detected
+
+── Statistical Summary ──
+  N valid                   : 2164
+  Mean (°C)                 : 15.9921
+  Median (°C)               : 15.3000
+  Std Dev (°C)              : 2.9637
+  Variance (°C²)            : 8.7836
+  P10 (°C)                  : 12.5000
+  P90 (°C)                  : 20.1000
+  Min (°C)                  : 10.8000
+  Max (°C)                  : 23.1000
+  Range (°C)                : 12.3000
+  Skewness                  : 0.3124
+  Kurtosis                  : -1.2039
+  First stable period       : 2012-01-15
+
+  Shapiro-Wilk normality test: W=0.9371, p=2.44e-29
+  → Non-normal distribution (α=0.05)
+
+── Top-3 Dominant Periodicities (FFT) ──
+  #1  Period = 365.3 days  (freq = 0.00274 cycles/day)  Power = 4221.1411
+  #2  Period = 313.1 days  (freq = 0.00319 cycles/day)  Power = 1284.7546
+  #3  Period = 438.4 days  (freq = 0.00228 cycles/day)  Power = 983.0417
+
+[INFO] Generating plots …
+
+[DONE] All figures and logs saved to 'outputs/' directory.
